@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official AI-powered Information Assistant for Jeppiaar Engineering College. Get instant answers regarding admissions, courses, placement statistics, hostel facilities, and transport.">
+    <title>Home | Jeppiaar Engineering College AI Information Assistant</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar" id="navbar">
+                <a href="index.html" class="brand">
+                    <img src="jpr-logo.png" alt="Jeppiaar Engineering College Logo" class="college-logo">
+                    <div class="brand-text">
+                        <span class="brand-name">Jeppiaar Engineering College</span>
+                        <span class="brand-subtitle">AI Information Assistant</span>
+                    </div>
+                </a>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="features.html" class="nav-link">Features</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <!-- Mobile CTA inside Menu -->
+                    <li class="nav-actions-mobile" style="display: none;">
+                        <a href="chat.html" class="btn btn-primary">Ask AI Assistant</a>
+                    </li>
+                </ul>
+
+                <!-- Theme Toggle & CTA actions -->
+                <div style="display: flex; align-items: center; gap: 16px;">
+                    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <div class="nav-actions">
+                        <a href="chat.html" class="btn btn-primary">Ask AI Assistant</a>
+                    </div>
+                    <button class="mobile-toggle" aria-label="Toggle Navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <h1>Your Gateway to <span>Jeppiaar Engineering College</span> Information</h1>
+                        <p>Have questions about admissions, fees, courses, placements, or campus hostels? Get instant, accurate responses from our dedicated AI-powered information portal.</p>
+                        <div class="hero-ctas">
+                            <a href="chat.html" class="btn btn-primary"><i class="fa-solid fa-comments" style="margin-right: 8px;"></i>Ask AI Assistant</a>
+                            <a href="features.html" class="btn btn-secondary">Explore Features</a>
+                        </div>
+                        <div class="hero-chips-container">
+                            <h3 class="hero-chips-title">Suggested Inquiries</h3>
+                            <div class="hero-chips">
+                                <a href="chat.html?q=admissions" class="chip" data-query="How do I apply for admissions?">Admissions Criteria</a>
+                                <a href="chat.html?q=placements" class="chip" data-query="Tell me about placement cell records">Placement Records</a>
+                                <a href="chat.html?q=courses" class="chip" data-query="What engineering courses are offered?">Offered Branches</a>
+                                <a href="chat.html?q=hostel" class="chip" data-query="What are the hostel details and food menus?">Hostel & Food</a>
+                                <a href="chat.html?q=transport" class="chip" data-query="Show me the college bus routes">Bus Transport</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image-container">
+                        <img src="campus_hero.png" alt="Jeppiaar Engineering College Campus and Facilities">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="section section-bg-white">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">95%+</div>
+                        <div class="stat-label">Placement Record</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">25+ Yrs</div>
+                        <div class="stat-label">Academic Legacy</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Top Global Recruiters</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">UG & PG Departments</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Target Audience Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Customized Guidance for Everyone</h2>
+                    <p>Our AI Assistant is designed to address specific queries from different members of our academic community.</p>
+                </div>
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3>Prospective Students</h3>
+                        <p>Get instant guidance regarding cut-off ranks, admission eligibility criteria, counseling processes, and the detailed curriculum of each engineering branch.</p>
+                        <ul class="audience-links">
+                            <li><a href="chat.html?q=admissions"><i class="fa-solid fa-arrow-right"></i> Check Admissions Procedure</a></li>
+                            <li><a href="chat.html?q=courses"><i class="fa-solid fa-arrow-right"></i> Review Offered Branches</a></li>
+                        </ul>
+                    </div>
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <h3>Parents & Guardians</h3>
+                        <p>Address concerns regarding hostel hygiene, dining menus, bus transport pick-up zones, safety rules, security standards, and campus code of conduct.</p>
+                        <ul class="audience-links">
+                            <li><a href="chat.html?q=hostel"><i class="fa-solid fa-arrow-right"></i> Explore Hostel Accommodations</a></li>
+                            <li><a href="chat.html?q=transport"><i class="fa-solid fa-arrow-right"></i> Inspect Transportation Coverage</a></li>
+                        </ul>
+                    </div>
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+                        <h3>Current Students</h3>
+                        <p>Retrieve quick schedules for placement training cells, library hours, upcoming symposia, administrative contact details, and department regulations.</p>
+                        <ul class="audience-links">
+                            <li><a href="chat.html?q=placements"><i class="fa-solid fa-arrow-right"></i> Look up Career Recruiters</a></li>
+                            <li><a href="features.html"><i class="fa-solid fa-arrow-right"></i> Discover Campus Utilities</a></li>
+                        </ul>
+                    </div>
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h3>Visitors & Recruiters</h3>
+                        <p>Access directions to the campus administrative office, placement drive details, official email IDs, phone directories, and location maps.</p>
+                        <ul class="audience-links">
+                            <li><a href="contact.html"><i class="fa-solid fa-arrow-right"></i> Get Location & Coordinates</a></li>
+                            <li><a href="chat.html?q=contact"><i class="fa-solid fa-arrow-right"></i> Ask for Administrative Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1: Logo & Info -->
+                <div class="footer-col footer-about">
+                    <img src="jpr-logo.png" alt="Jeppiaar Engineering College Logo" class="college-logo">
+                    <p>Jeppiaar Engineering College is a premier academic institution in Chennai dedicated to delivering excellent technical education and fostering career-ready professionals.</p>
+                    <a href="https://jeppiaarcollege.org/" target="_blank" class="btn btn-gold" style="align-self: flex-start;"><i class="fa-solid fa-globe" style="margin-right: 8px;"></i>Official Website</a>
+                </div>
+                
+                <!-- Col 2: Quick Links -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Portal</a></li>
+                        <li><a href="features.html">What AI Can Answer</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="chat.html">Ask AI Assistant</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 3: Contact Details -->
+                <div class="footer-col">
+                    <h3>Contact Information</h3>
+                    <ul class="footer-contact-details">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Jeppiaar Engineering College, Rajiv Gandhi Salai (OMR), Jeppiaar Nagar, Semmancheri, Chennai, Tamil Nadu - 600119</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+91-44-24502818 / +91-44-24502819</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>admissions@jeppiaarcollege.org<br>office@jeppiaarcollege.org</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jeppiaar Engineering College. All rights reserved. Developed as an AI Information Portal.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating AI Button -->
+    <button id="floating-ai-button" class="floating-ai-button" aria-label="Ask AI Assistant">
+        <span class="ai-button-icon">💬</span>
+        <span class="ai-button-label">Ask AI Assistant</span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

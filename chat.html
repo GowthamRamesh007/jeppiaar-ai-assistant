@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Access the Jeppiaar Engineering College AI Information Assistant. Type your queries about engineering admissions, placements, hostel food, and bus routes.">
+    <title>Ask AI Assistant | Jeppiaar Engineering College AI Information Assistant</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar" id="navbar">
+                <a href="index.html" class="brand">
+                    <img src="jpr-logo.png" alt="Jeppiaar Engineering College Logo" class="college-logo">
+                    <div class="brand-text">
+                        <span class="brand-name">Jeppiaar Engineering College</span>
+                        <span class="brand-subtitle">AI Information Assistant</span>
+                    </div>
+                </a>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="features.html" class="nav-link">Features</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <!-- Mobile CTA inside Menu -->
+                    <li class="nav-actions-mobile" style="display: none;">
+                        <a href="chat.html" class="btn btn-primary">Ask AI Assistant</a>
+                    </li>
+                </ul>
+
+                <!-- Theme Toggle & CTA actions -->
+                <div style="display: flex; align-items: center; gap: 16px;">
+                    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <div class="nav-actions">
+                        <a href="chat.html" class="btn btn-primary">Ask AI Assistant</a>
+                    </div>
+                    <button class="mobile-toggle" aria-label="Toggle Navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Chat Workspace -->
+    <div class="chat-wrapper">
+        
+        <!-- Left Sidebar: Desktop Category Directory -->
+        <aside class="chat-sidebar">
+            <div class="chat-sidebar-header">
+                <h2><i class="fa-solid fa-folder-open"></i>Knowledge Base</h2>
+                <p>Voice assistant topics directory</p>
+            </div>
+            
+            <div class="chat-sidebar-scroll">
+                
+                <!-- Category 1: Academics -->
+                <div class="chat-topic-group">
+                    <div class="chat-topic-title">Academics & Placements</div>
+                    <button class="chat-topic-btn" data-topic="admissions">
+                        <i class="fa-solid fa-graduation-cap"></i> Admissions Info
+                    </button>
+                    <button class="chat-topic-btn" data-topic="courses">
+                        <i class="fa-solid fa-book-open"></i> Courses Offered
+                    </button>
+                    <button class="chat-topic-btn" data-topic="placements">
+                        <i class="fa-solid fa-briefcase"></i> Placements Stats
+                    </button>
+                </div>
+                
+                <!-- Category 2: Facilities -->
+                <div class="chat-topic-group">
+                    <div class="chat-topic-title">Logistics & Amenities</div>
+                    <button class="chat-topic-btn" data-topic="hostel">
+                        <i class="fa-solid fa-hotel"></i> Hostel & Dining
+                    </button>
+                    <button class="chat-topic-btn" data-topic="transport">
+                        <i class="fa-solid fa-bus"></i> Transport Routes
+                    </button>
+                    <button class="chat-topic-btn" data-topic="contact">
+                        <i class="fa-solid fa-address-book"></i> Office Helpline
+                    </button>
+                </div>
+                
+            </div>
+        </aside>
+
+        <!-- Horizontal Scroll Category Bar for Mobile Viewports -->
+        <div class="chat-sidebar-mobile-topics" style="display: none;">
+            <button class="chat-mobile-topic-btn" data-topic="admissions">Admissions</button>
+            <button class="chat-mobile-topic-btn" data-topic="courses">Courses</button>
+            <button class="chat-mobile-topic-btn" data-topic="placements">Placements</button>
+            <button class="chat-mobile-topic-btn" data-topic="hostel">Hostels</button>
+            <button class="chat-mobile-topic-btn" data-topic="transport">Buses</button>
+            <button class="chat-mobile-topic-btn" data-topic="contact">Office</button>
+        </div>
+
+        <!-- Right Pane: Active Chat Window -->
+        <main class="chat-container" style="padding: 24px; display: flex; align-items: center; justify-content: center;">
+            
+            <!-- Real ElevenLabs Agent: Replace YOUR_ELEVENLABS_AGENT_ID with my actual ElevenLabs Agent ID -->
+            <div class="elevenlabs-agent-wrapper">
+              <elevenlabs-convai
+                agent-id="YOUR_ELEVENLABS_AGENT_ID"
+                variant="expanded">
+              </elevenlabs-convai>
+            </div>
+            
+        </main>
+        
+    </div>
+
+    <!-- Real ElevenLabs Agent Embed Script -->
+    <script
+      src="https://unpkg.com/@elevenlabs/convai-widget-embed"
+      async
+      type="text/javascript">
+    </script>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

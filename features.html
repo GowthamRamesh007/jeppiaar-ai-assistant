@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the capabilities of the Jeppiaar Engineering College AI Information Assistant. Learn what topics and questions the assistant can answer regarding admissions, placements, and campus amenities.">
+    <title>Features | Jeppiaar Engineering College AI Information Assistant</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar" id="navbar">
+                <a href="index.html" class="brand">
+                    <img src="jpr-logo.png" alt="Jeppiaar Engineering College Logo" class="college-logo">
+                    <div class="brand-text">
+                        <span class="brand-name">Jeppiaar Engineering College</span>
+                        <span class="brand-subtitle">AI Information Assistant</span>
+                    </div>
+                </a>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="features.html" class="nav-link active">Features</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <!-- Mobile CTA inside Menu -->
+                    <li class="nav-actions-mobile" style="display: none;">
+                        <a href="chat.html" class="btn btn-primary">Ask AI Assistant</a>
+                    </li>
+                </ul>
+
+                <!-- Theme Toggle & CTA actions -->
+                <div style="display: flex; align-items: center; gap: 16px;">
+                    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <div class="nav-actions">
+                        <a href="chat.html" class="btn btn-primary">Ask AI Assistant</a>
+                    </div>
+                    <button class="mobile-toggle" aria-label="Toggle Navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Features Hero Section -->
+        <section class="hero" style="padding: 60px 0;">
+            <div class="container">
+                <div class="section-header" style="margin-bottom: 0;">
+                    <h2>What the AI Assistant Can Answer</h2>
+                    <p>Our database contains comprehensive academic, logistic, and campus records. Click any question below to ask the AI.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid Section -->
+        <section class="section section-bg-white">
+            <div class="container">
+                <div class="features-grid">
+                    
+                    <!-- Card 1: Admissions -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3>Admissions Guidance</h3>
+                        <p>Ask about counseling cutoff details, TNEA college codes, application processes for government & management quotas, and documents required during physical verification.</p>
+                        <div class="feature-sample-questions">
+                            <span>Sample Questions</span>
+                            <div class="feature-question-links">
+                                <a href="chat.html?q=How+do+I+apply+for+admissions%3F"><i class="fa-solid fa-circle-question"></i> How do I apply for admissions?</a>
+                                <a href="chat.html?q=What+documents+are+required+during+admission%3F"><i class="fa-solid fa-circle-question"></i> What documents are required?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Courses -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <h3>Academic Courses</h3>
+                        <p>Inquire about our various 4-year undergraduate B.E. and B.Tech. programs, curriculum structures, specializations, PG programs, and department guidelines.</p>
+                        <div class="feature-sample-questions">
+                            <span>Sample Questions</span>
+                            <div class="feature-question-links">
+                                <a href="chat.html?q=What+engineering+courses+are+offered%3F"><i class="fa-solid fa-circle-question"></i> What courses are offered?</a>
+                                <a href="chat.html?q=Does+the+college+offer+Biotechnology%3F"><i class="fa-solid fa-circle-question"></i> Is Biotechnology offered?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Placements -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h3>Placement Records</h3>
+                        <p>Get information on annual placement packages, average salary levels, major recruiters, placement training workshops, coding bootcamps, and counseling cell events.</p>
+                        <div class="feature-sample-questions">
+                            <span>Sample Questions</span>
+                            <div class="feature-question-links">
+                                <a href="chat.html?q=Tell+me+about+placement+cell+records"><i class="fa-solid fa-circle-question"></i> Tell me about placements</a>
+                                <a href="chat.html?q=List+top+recruitment+companies"><i class="fa-solid fa-circle-question"></i> Who are the top recruiters?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Hostel & Food -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-hotel"></i>
+                        </div>
+                        <h3>Campus Hostel & Mess</h3>
+                        <p>Details on hostels for boys and girls, security systems, fitness centers, reading rooms, study timing rules, and the renowned college dining buffet menu.</p>
+                        <div class="feature-sample-questions">
+                            <span>Sample Questions</span>
+                            <div class="feature-question-links">
+                                <a href="chat.html?q=What+are+the+hostel+details+and+food+menus%3F"><i class="fa-solid fa-circle-question"></i> What are the hostel details?</a>
+                                <a href="chat.html?q=What+type+of+food+is+served+in+the+mess%3F"><i class="fa-solid fa-circle-question"></i> What food is served in the mess?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Transport -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-bus"></i>
+                        </div>
+                        <h3>Transport Routes</h3>
+                        <p>Explore bus fleet routing covering Chennai suburbs, pick-up stations, safety instructions, schedule timings, and general guidelines for day-scholars.</p>
+                        <div class="feature-sample-questions">
+                            <span>Sample Questions</span>
+                            <div class="feature-question-links">
+                                <a href="chat.html?q=Show+me+the+college+bus+routes"><i class="fa-solid fa-circle-question"></i> Show me the bus routes</a>
+                                <a href="chat.html?q=Does+the+college+bus+cover+Tambaram%3F"><i class="fa-solid fa-circle-question"></i> Does the bus cover Tambaram?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Contact & Location -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <h3>Helplines & Locations</h3>
+                        <p>Retrieve office location details, phone numbers, administrative emails, department heads' coordinates, and visiting hours for parents and visitors.</p>
+                        <div class="feature-sample-questions">
+                            <span>Sample Questions</span>
+                            <div class="feature-question-links">
+                                <a href="chat.html?q=What+is+the+official+admission+helpline%3F"><i class="fa-solid fa-circle-question"></i> What is the admission helpline?</a>
+                                <a href="chat.html?q=Where+is+the+college+located%3F"><i class="fa-solid fa-circle-question"></i> Where is the college located?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA section -->
+        <section class="section" style="background-color: var(--color-primary); color: var(--color-white); text-align: center;">
+            <div class="container">
+                <h2 style="color: var(--color-white); margin-bottom: 16px;">Have a Custom Academic Inquiry?</h2>
+                <p style="color: rgba(255, 255, 255, 0.8); max-width: 600px; margin: 0 auto 30px auto; font-size: 1.1rem;">Our AI Information Assistant is online and ready to answer your specific questions in real time.</p>
+                <a href="chat.html" class="btn btn-gold" style="padding: 14px 36px; font-size: 1.05rem;"><i class="fa-solid fa-comments" style="margin-right: 8px;"></i>Open AI Assistant Chat</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1: Logo & Info -->
+                <div class="footer-col footer-about">
+                    <img src="jpr-logo.png" alt="Jeppiaar Engineering College Logo" class="college-logo">
+                    <p>Jeppiaar Engineering College is a premier academic institution in Chennai dedicated to delivering excellent technical education and fostering career-ready professionals.</p>
+                    <a href="https://jeppiaarcollege.org/" target="_blank" class="btn btn-gold" style="align-self: flex-start;"><i class="fa-solid fa-globe" style="margin-right: 8px;"></i>Official Website</a>
+                </div>
+                
+                <!-- Col 2: Quick Links -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Portal</a></li>
+                        <li><a href="features.html">What AI Can Answer</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="chat.html">Ask AI Assistant</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 3: Contact Details -->
+                <div class="footer-col">
+                    <h3>Contact Information</h3>
+                    <ul class="footer-contact-details">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Jeppiaar Engineering College, Rajiv Gandhi Salai (OMR), Jeppiaar Nagar, Semmancheri, Chennai, Tamil Nadu - 600119</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+91-44-24502818 / +91-44-24502819</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>admissions@jeppiaarcollege.org<br>office@jeppiaarcollege.org</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jeppiaar Engineering College. All rights reserved. Developed as an AI Information Portal.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating AI Button -->
+    <button id="floating-ai-button" class="floating-ai-button" aria-label="Ask AI Assistant">
+        <span class="ai-button-icon">💬</span>
+        <span class="ai-button-label">Ask AI Assistant</span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
